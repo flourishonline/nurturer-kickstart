@@ -2,8 +2,20 @@
   "version": 2,
   "cleanUrls": true,
   "functions": {
-    "api/*.js": {
+    "api/generate.js": {
+      "maxDuration": 300
+    },
+    "api/download.js": {
       "maxDuration": 60
+    },
+    "api/verify-code.js": {
+      "maxDuration": 10
+    },
+    "api/save-progress.js": {
+      "maxDuration": 10
+    },
+    "api/load.js": {
+      "maxDuration": 10
     }
   }
 }

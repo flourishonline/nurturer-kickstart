@@ -240,7 +240,8 @@ When Flourish fonts are confirmed, update the `--font-display` and `--font-body`
 
 ## Maintenance notes
 
-- **Claude model:** Currently `claude-opus-4-7`. Check Anthropic's console for newer models over time. Sonnet is cheaper if quality holds at that tier.
+- **Claude model:** Currently `claude-sonnet-4-6`. This gives fast generation (45 to 90 seconds) at lower cost (about 3 cents per generation) with excellent quality for structured outputs. To upgrade to Opus 4.7 for higher quality, change the model string in `api/generate.js` to `claude-opus-4-7`, but note that Opus generations can take 90 to 180 seconds so you may need to keep the `maxDuration: 300` setting in `vercel.json`.
+- **Function timeout:** `api/generate.js` is set to 300 seconds (5 minutes) to allow headroom. Other functions are set to 10 seconds.
 - **Redis TTL:** Sessions auto-expire after 90 days. Adjust in `lib/utils.js` if needed.
 - **Rate limiting:** Not currently implemented. If you see abuse, add middleware to track requests per access code.
 - **Error monitoring:** Add Sentry or similar if you want to track generation failures.
