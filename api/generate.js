@@ -175,9 +175,9 @@ module.exports = async (req, res) => {
     }
     const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
-    // Call Claude
+    // Call Claude - using Sonnet for speed (still high quality for structured output)
     const message = await client.messages.create({
-      model: 'claude-opus-4-7',
+      model: 'claude-sonnet-4-6',
       max_tokens: 8000,
       system: SYSTEM_PROMPT,
       messages: [{ role: 'user', content: buildUserPrompt(formData) }]
