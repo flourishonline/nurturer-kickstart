@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nurturer Brand Kick Start Generator · Flourish Online</title>
+  <meta name="description" content="Your personalised Nurturer brand strategy, social bio, content pillars, offer structure, and 90 day plan." />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <!-- ACCESS GATE -->
+  <section id="view-gate" class="view active">
+    <div class="container narrow">
+      <header class="brand-header">
+        <div class="eyebrow">FLOURISH ONLINE</div>
+        <h1 class="display">The Nurturer Brand<br/><em>Kick Start Generator</em></h1>
+        <p class="lede">Your personalised brand strategy, social bio, content pillars, offer structure, and 90 day plan. Built from the framework in the ebook, tailored to you.</p>
+      </header>
+
+      <div class="card">
+        <h2>Enter your access code</h2>
+        <p class="muted">Your access code was emailed to you when you purchased the Nurturer ebook. It looks something like <code>FLOURISH-NURTURER-XXXX</code>.</p>
+        <form id="form-access">
+          <label for="access-code">Access code</label>
+          <input type="text" id="access-code" name="accessCode" placeholder="FLOURISH-NURTURER-XXXX" autocomplete="off" required />
+          <button type="submit" class="btn-primary">Continue</button>
+          <p id="access-error" class="error" hidden></p>
+        </form>
+
+        <div class="divider"><span>OR</span></div>
+
+        <h3>Already started? Load your progress</h3>
+        <form id="form-load">
+          <label for="retrieval-code">Retrieval code</label>
+          <input type="text" id="retrieval-code" name="retrievalCode" placeholder="e.g. ROSE-WILD-MOON" autocomplete="off" />
+          <button type="submit" class="btn-secondary">Load my progress</button>
+          <p id="load-error" class="error" hidden></p>
+        </form>
+      </div>
+
+      <footer class="foot">
+        <p>Don't have an access code? <a href="https://www.flourishonline.com/services" target="_blank" rel="noopener">Get the ebook</a></p>
+      </footer>
+    </div>
+  </section>
+
+  <!-- FORM VIEW (3 STEPS) -->
+  <section id="view-form" class="view">
+    <div class="container">
+      <header class="form-header">
+        <div class="eyebrow">FLOURISH ONLINE</div>
+        <h1>Tell us about you and your work</h1>
+        <p class="muted">This will take about 10 minutes. Your answers are saved as you go. You can come back to finish later.</p>
+
+        <div class="progress">
+          <div class="step-indicator" data-step="1">
+            <span class="step-num">1</span>
+            <span class="step-label">You and your work</span>
+          </div>
+          <div class="step-indicator" data-step="2">
+            <span class="step-num">2</span>
+            <span class="step-label">Your people</span>
+          </div>
+          <div class="step-indicator" data-step="3">
+            <span class="step-num">3</span>
+            <span class="step-label">Your brand and offers</span>
+          </div>
+        </div>
+      </header>
+
+      <form id="form-main">
+        <!-- STEP 1 -->
+        <fieldset class="step step-1 active" data-step="1">
+          <legend class="visually-hidden">Step 1: You and your work</legend>
+
+          <div class="field-group-two">
+            <div class="field">
+              <label for="yourName">Your name</label>
+              <input type="text" id="yourName" name="yourName" required />
+            </div>
+            <div class="field">
+              <label for="businessName">Your business name</label>
+              <input type="text" id="businessName" name="businessName" placeholder="If different from your name" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="whatYouDo">What do you do, in one sentence?</label>
+            <p class="helper">Keep it simple. You can refine it later.</p>
+            <textarea id="whatYouDo" name="whatYouDo" rows="2" placeholder="e.g. I help women in midlife reconnect with their bodies through somatic coaching." required></textarea>
+          </div>
+
+          <div class="field">
+            <label>Your brand archetype combination</label>
+            <p class="helper">Your main archetype is Nurturer. Add your secondary and shadow from the quiz for more nuanced outputs.</p>
+            <div class="field-group-three">
+              <div>
+                <label for="archetypeMain" class="sublabel">Main</label>
+                <input type="text" id="archetypeMain" name="archetypeMain" value="Nurturer" readonly />
+              </div>
+              <div>
+                <label for="archetypeSecondary" class="sublabel">Secondary</label>
+                <select id="archetypeSecondary" name="archetypeSecondary">
+                  <option value="">Choose one</option>
+                  <option>Adventuress</option>
+                  <option>Alchemist</option>
+                  <option>Badass</option>
+                  <option>Creatress</option>
+                  <option>Girl Next Door</option>
+                  <option>Heroine</option>
+                  <option>Lover</option>
+                  <option>Mischief Maker</option>
+                  <option>Pure Heart</option>
+                  <option>Queen</option>
+                  <option>Sage</option>
+                </select>
+              </div>
+              <div>
+                <label for="archetypeShadow" class="sublabel">Shadow</label>
+                <select id="archetypeShadow" name="archetypeShadow">
+                  <option value="">Choose one</option>
+                  <option>Adventuress</option>
+                  <option>Alchemist</option>
+                  <option>Badass</option>
+                  <option>Creatress</option>
+                  <option>Girl Next Door</option>
+                  <option>Heroine</option>
+                  <option>Lover</option>
+                  <option>Mischief Maker</option>
+                  <option>Pure Heart</option>
+                  <option>Queen</option>
+                  <option>Sage</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="step-nav">
+            <button type="button" class="btn-primary" data-next="2">Next</button>
+          </div>
+        </fieldset>
+
+        <!-- STEP 2 -->
+        <fieldset class="step step-2" data-step="2">
+          <legend class="visually-hidden">Step 2: Your people</legend>
+
+          <div class="field">
+            <label for="idealClient">Who is your ideal client?</label>
+            <p class="helper">Describe her in your own words. Her age, her life stage, her personality, what she is struggling with, what she is looking for. 3 to 5 sentences.</p>
+            <textarea id="idealClient" name="idealClient" rows="6" placeholder="She is in her late 30s to early 50s. She has been in therapy for years and has read everything. She is exhausted by performing. She is in a transition, maybe a career shift or the end of a relationship or the beginning of menopause. She wants someone who will not try to fix her, just sit with her while she figures it out." required></textarea>
+          </div>
+
+          <div class="field">
+            <label for="clientQuotes">What do your clients actually say?</label>
+            <p class="helper">Three short quotes your clients have said (or would say) about what they are going through. These are the gold. Verbatim if you can remember.</p>
+            <textarea id="clientQuotes" name="clientQuotes" rows="5" placeholder="I feel like I am performing my life instead of living it.&#10;I am so tired of being the strong one.&#10;I want to feel like myself again."></textarea>
+          </div>
+
+          <div class="step-nav">
+            <button type="button" class="btn-secondary" data-back="1">Back</button>
+            <button type="button" class="btn-primary" data-next="3">Next</button>
+          </div>
+        </fieldset>
+
+        <!-- STEP 3 -->
+        <fieldset class="step step-3" data-step="3">
+          <legend class="visually-hidden">Step 3: Your brand and offers</legend>
+
+          <div class="field">
+            <label for="beliefs">What do you believe?</label>
+            <p class="helper">Complete the sentence "I believe..." with whatever you know to be true, in your bones, about the women you work with and what they need. One or two sentences.</p>
+            <textarea id="beliefs" name="beliefs" rows="3" placeholder="I believe every woman deserves to feel at home in her own life. I believe healing happens in relationship, not isolation." required></textarea>
+          </div>
+
+          <div class="field">
+            <label for="voiceAdjectives">Six adjectives that describe your brand voice</label>
+            <p class="helper">Pick a mix. Not all soft. Not all sharp. The best Nurturer brands have edges. Comma separated.</p>
+            <input type="text" id="voiceAdjectives" name="voiceAdjectives" placeholder="warm, perceptive, unhurried, witchy, quietly rigorous, reverent" required />
+          </div>
+
+          <div class="field">
+            <label for="currentOffers">Your current or planned offers</label>
+            <p class="helper">List your main offers with a brief line on each. Pricing optional.</p>
+            <textarea id="currentOffers" name="currentOffers" rows="5" placeholder="1:1 coaching package, 3 months, 6 sessions, $2,400&#10;The Coming Home Retreat, 2 day intensive&#10;Monthly membership with group calls, $87/month" required></textarea>
+          </div>
+
+          <div class="field">
+            <label>Where are you right now?</label>
+            <p class="helper">This shapes your 90 day plan.</p>
+            <div class="radio-group">
+              <label class="radio-option">
+                <input type="radio" name="startingPoint" value="starting" required />
+                <span>Just starting out, building from scratch</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="startingPoint" value="misaligned" />
+                <span>Have a brand but it doesn't feel right</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="startingPoint" value="established" />
+                <span>Established brand, ready to level up</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="startingPoint" value="pivoting" />
+                <span>Rebranding after a pivot</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="step-nav">
+            <button type="button" class="btn-secondary" data-back="2">Back</button>
+            <button type="submit" class="btn-primary">Generate my Kick Start</button>
+          </div>
+        </fieldset>
+      </form>
+
+      <div class="save-bar">
+        <button type="button" id="btn-save-progress" class="btn-link">Save my progress and come back later</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOADING VIEW -->
+  <section id="view-loading" class="view">
+    <div class="container narrow loading-view">
+      <div class="loading-spinner"></div>
+      <h2>Building your Nurturer Kick Start</h2>
+      <p class="muted" id="loading-message">Reading your answers...</p>
+      <p class="muted small">This usually takes 60 to 90 seconds. Please don't close this window.</p>
+    </div>
+  </section>
+
+  <!-- RESULTS VIEW -->
+  <section id="view-results" class="view">
+    <div class="container">
+      <header class="results-header">
+        <div class="eyebrow">YOUR PERSONALISED KICK START</div>
+        <h1 id="results-title">Your Nurturer Brand</h1>
+        <p class="muted">Generated for <span id="results-name"></span></p>
+
+        <div class="results-actions">
+          <button type="button" id="btn-download-pdf" class="btn-primary">Download PDF</button>
+          <button type="button" id="btn-download-docx" class="btn-secondary">Download Word doc</button>
+          <button type="button" id="btn-save-results" class="btn-link">Save for later</button>
+        </div>
+
+        <div id="retrieval-banner" class="retrieval-banner" hidden>
+          <p><strong>Your retrieval code:</strong> <span id="retrieval-display"></span></p>
+          <p class="small">Save this code. You can return anytime to view your Kick Start.</p>
+        </div>
+      </header>
+
+      <div id="results-content" class="results-content"></div>
+
+      <footer class="results-footer">
+        <p>Ready to take your brand further? <a href="https://www.flourishonline.com/services" target="_blank" rel="noopener">Explore working with Flourish</a></p>
+      </footer>
+    </div>
+  </section>
+
+  <script src="/app.js"></script>
+</body>
+</html>
