@@ -410,7 +410,7 @@ code {
    ========================================================= */
 #view-gate {
   background-color: var(--wine);
-  background-image: url('/images/bg-florals.jpg');
+  background-image: url('/images/bg-florals.png');
   background-size: cover;
   background-position: center center;
   display: flex;
