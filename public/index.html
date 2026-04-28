@@ -5,15 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nurturer Brand Kick Start Generator · Flourish Online</title>
   <meta name="description" content="Your personalised Nurturer brand strategy, social bio, content pillars, offer structure, and 90 day plan." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
   <!-- ACCESS GATE -->
   <section id="view-gate" class="view active">
-    <div class="container narrow">
+    <div class="gate-inner">
       <header class="brand-header">
         <div class="eyebrow">FLOURISH ONLINE</div>
-        <h1 class="display">The Nurturer Brand<br/><em>Kick Start Generator</em></h1>
+        <h1 class="display">
+          <span class="display-title">The Nurturer Brand</span>
+          <em class="display-script">Kick Start Generator</em>
+        </h1>
         <p class="lede">Your personalised brand strategy, social bio, content pillars, offer structure, and 90 day plan. Built from the framework in the ebook, tailored to you.</p>
       </header>
 
@@ -23,17 +29,17 @@
         <form id="form-access">
           <label for="access-code">Access code</label>
           <input type="text" id="access-code" name="accessCode" placeholder="FLOURISH-NURTURER-XXXX" autocomplete="off" required />
-          <button type="submit" class="btn-primary">Continue</button>
+          <button type="submit" class="btn-primary btn-block">Continue</button>
           <p id="access-error" class="error" hidden></p>
         </form>
 
         <div class="divider"><span>OR</span></div>
 
-        <h3>Already started? Load your progress</h3>
+        <h3 class="script-subheading">Already started? Load your progress.</h3>
         <form id="form-load">
           <label for="retrieval-code">Retrieval code</label>
           <input type="text" id="retrieval-code" name="retrievalCode" placeholder="e.g. ROSE-WILD-MOON" autocomplete="off" />
-          <button type="submit" class="btn-secondary">Load my progress</button>
+          <button type="submit" class="btn-secondary btn-block">Load my progress</button>
           <p id="load-error" class="error" hidden></p>
         </form>
       </div>
