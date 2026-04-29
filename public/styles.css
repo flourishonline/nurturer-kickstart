@@ -68,13 +68,13 @@ html, body {
 /* =========================================================
    VIEWS (only one shown at a time)
    ========================================================= */
-.view {
+.view:not(.active) {
   display: none;
-  min-height: 100vh;
 }
 
 .view.active {
   display: block;
+  min-height: 100vh;
 }
 
 /* =========================================================
@@ -408,7 +408,7 @@ code {
    Image: export "Florals 2" from Figma (BA Sales Page →
    Kickstart App frame) and save to /public/images/bg-florals.jpg
    ========================================================= */
-#view-gate {
+#view-gate.active {
   background-color: var(--wine);
   background-image: url('/images/bg-florals.png');
   background-size: cover;
